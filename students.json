@@ -1,0 +1,270 @@
+{
+    "students": [
+        {
+            "name": "san",
+            "email": "san7310san@gmail.com",
+            "age": 19,
+            "sex": "Male",
+            "password": "san8940",
+            "exams": [
+                {
+                    "Subject_name": "Introduction to Programming",
+                    "Subject_code": "CSE1001",
+                    "Number_of_questions": 3,
+                    "questions": [
+                        {
+                            "question": "Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.",
+                            "answer": null,
+                            "answer_key": "Procedural programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequence of steps to be executed. Object-oriented programming (OOP) is a programming paradigm based on the concept of \\\"objects\\\", which can contain data in the form of attributes and code in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of object-oriented programming: Java, Python.",
+                            "total_marks": 10,
+                            "evaluation": "The student did not provide an answer.",
+                            "marks": "0"
+                        },
+                        {
+                            "question": "What is the difference between a compiler and an interpreter? How do they process code differently?",
+                            "answer": null,
+                            "answer_key": "A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly. Compiler: C, C++, Java (to bytecode). Interpreter: Python, JavaScript.",
+                            "total_marks": 5,
+                            "evaluation": "The student did not provide an answer, so it cannot be evaluated.",
+                            "marks": "0"
+                        },
+                        {
+                            "question": "Describe the concept of inheritance in object-oriented programming. How does it facilitate code reusability?",
+                            "answer": null,
+                            "answer_key": "Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behaviors from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.",
+                            "total_marks": 5,
+                            "evaluation": "The student has not provided an answer. So it cannot be evaluated.",
+                            "marks": "0"
+                        }
+                    ]
+                },
+                {
+                    "Subject_name": "Introduction to Programming",
+                    "Subject_code": "CSE1001",
+                    "Number_of_questions": 3,
+                    "questions": [
+                        {
+                            "question": "Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.",
+                            "answer": "\"Question\": Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.\n\n\"Answer\": Procedural Programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequences of steps to be executed. Object-Oriented Programming is a programming paradigm based on the concepts of \"objects\", which can contain data in the form of attributes and codes in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of Object-Oriented programming: Java, Python.\n",
+                            "answer_key": "Procedural programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequence of steps to be executed. Object-oriented programming (OOP) is a programming paradigm based on the concept of \\\"objects\\\", which can contain data in the form of attributes and code in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of object-oriented programming: Java, Python.",
+                            "total_marks": 10,
+                            "evaluation": "The student's answer is almost identical to the answer key.  The only difference is minor formatting (use of quotation marks around \"Question\" and \"Answer\").  The content is completely accurate and addresses all parts of the question: defining both procedural and OOP, highlighting key differences (focus on procedures vs. objects, and mentioning key OOP principles), and providing valid examples of each paradigm.  Therefore, the student's answer is excellent.\n",
+                            "marks": "8\n"
+                        },
+                        {
+                            "question": "What is the difference between a compiler and an interpreter? How do they process code differently?",
+                            "answer": "**Question:** \"What is the difference between a compiler and an interpreter? How do they process code differently?\"\n\n**Answer:** A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly.\n\nCompiler: C, C++, Java (to bytecode)\nInterpreter: Python, Javascript",
+                            "answer_key": "A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly. Compiler: C, C++, Java (to bytecode). Interpreter: Python, JavaScript.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is excellent.  It accurately and concisely describes the core difference between compilers and interpreters: the batch translation versus line-by-line translation and execution. The examples provided (C, C++, Java, Python, JavaScript) are also correct in illustrating languages typically associated with each approach.  There is nothing to improve upon in the student's response.\n",
+                            "marks": "5\n"
+                        },
+                        {
+                            "question": "Describe the concept of inheritance in object-oriented programming. How does it facilitate code reusability?",
+                            "answer": "\"Question\": \"Describe the concept of inheritance in Object-Oriented programming. How does it facilitate code reusability?\",\n\n\"Answer\": \"Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behavior from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class car can inherit from Vehicle and gain access to its attributes and methods.\"",
+                            "answer_key": "Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behaviors from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is largely correct and demonstrates understanding of the core concept of inheritance in OOP.  They accurately describe inheritance as a mechanism for creating new classes (subclasses) from existing ones (superclasses), and correctly explain that this allows for the inheritance of attributes and methods, thereby promoting code reuse. The example given, using Vehicle and Car, is also appropriate and clearly illustrates the concept.\n\nHowever, the answer could be improved by explicitly mentioning the \"is-a\" relationship that inheritance represents.  The Car *is a* Vehicle.  This clarifies the fundamental relationship between the superclass and subclass.  Further, a slightly more detailed explanation of *how* the code reuse is facilitated (e.g., avoiding redundant code and reducing development time) would strengthen the response.  Finally, a minor typo (\"car\" should be \"Car\") should be corrected for clarity.\n",
+                            "marks": "4\n"
+                        }
+                    ]
+                },
+                {
+                    "Subject_name": "Introduction to Programming",
+                    "Subject_code": "CSE1001",
+                    "Number_of_questions": 3,
+                    "questions": [
+                        {
+                            "question": "Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.",
+                            "answer": "\"Question\": Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.\n\n\"Answer\": Procedural Programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequences of steps to be executed. Object-Oriented Programming is a programming paradigm based on the concepts of \"objects,\" which can contain data in the form of attributes and codes in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of Object-Oriented programming: Java, Python.",
+                            "answer_key": "Procedural programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequence of steps to be executed. Object-oriented programming (OOP) is a programming paradigm based on the concept of \\\"objects\\\", which can contain data in the form of attributes and code in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of object-oriented programming: Java, Python.",
+                            "total_marks": 10,
+                            "evaluation": "The student's answer is almost identical to the answer key.  The only difference is minor formatting (use of quotation marks around \"Question\" and \"Answer\").  The content is completely accurate and correctly identifies the core differences between procedural and object-oriented programming, giving appropriate examples of each.  There is nothing to improve in the student's response.  The student demonstrates a good understanding of the concepts.\n",
+                            "marks": "8\n"
+                        },
+                        {
+                            "question": "What is the difference between a compiler and an interpreter? How do they process code differently?",
+                            "answer": "\"Question\": \"What is the difference between a compiler and an interpreter? How do they process code differently?\"\n\n\"Answer\": A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly.\n\nCompiler: C, C++, Java (to bytecode)\nInterpreter: Python, Javascript\n",
+                            "answer_key": "A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly. Compiler: C, C++, Java (to bytecode). Interpreter: Python, JavaScript.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is largely correct and accurately reflects the fundamental difference between compilers and interpreters.  They correctly describe the batch processing nature of a compiler versus the line-by-line execution of an interpreter.  The examples provided (C, C++, Java, Python, Javascript) are also appropriate.\n\nHowever, the answer could be improved by explicitly mentioning the key consequence of this difference:  Generally, compiled programs execute faster because the translation to machine code happens only once, before execution. Interpreted programs, on the other hand, involve repeated translation during each run, leading to potentially slower execution speeds.  While not explicitly asked for, this is an important aspect of understanding the difference.\n",
+                            "marks": "5\n"
+                        },
+                        {
+                            "question": "Describe the concept of inheritance in object-oriented programming. How does it facilitate code reusability?",
+                            "answer": "\"Question\": \"Describe the concept of inheritance in Object-Oriented programming. How does it facilitate code reusability?\",\n\n\"Answer\": \"Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behavior from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class car can inherit from Vehicle and gain access to its attributes and methods.\"",
+                            "answer_key": "Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behaviors from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is largely correct and demonstrates a good understanding of inheritance.  It accurately describes the core concept: a subclass inheriting attributes and methods from a superclass to avoid code duplication. The example of a `Vehicle` class and a `Car` subclass is appropriate and clearly illustrates the point.\n\nHowever, the answer could be improved by explicitly mentioning the \"is-a\" relationship inherent in inheritance.  A car *is a* vehicle, and this relationship is fundamental to understanding how inheritance works.  The student's answer implicitly suggests this relationship, but stating it explicitly would strengthen the response.  Furthermore, while the student correctly identifies the benefit of code reuse, elaborating slightly on *why* this is beneficial (e.g., reduced development time, easier maintenance, improved consistency) would enhance the answer.\n",
+                            "marks": "4\n"
+                        }
+                    ]
+                },
+                {
+                    "Subject_name": "Introduction to Programming",
+                    "Subject_code": "CSE1001",
+                    "Number_of_questions": 3,
+                    "questions": [
+                        {
+                            "question": "Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.",
+                            "answer": "\"Question\": Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.\n\n\"Answer\": Procedural Programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequences of steps to be executed. Object-Oriented Programming is a programming paradigm based on the concepts of \"objects,\" which can contain data in the form of attributes and codes in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of Object-Oriented programming: Java, Python.\n",
+                            "answer_key": "Procedural programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequence of steps to be executed. Object-oriented programming (OOP) is a programming paradigm based on the concept of \\\"objects\\\", which can contain data in the form of attributes and code in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of object-oriented programming: Java, Python.",
+                            "total_marks": 10,
+                            "evaluation": "The student's answer is almost identical to the answer key.  The only difference is minor formatting (\"Question\" and \"Answer\" labels added by the student).  The content is accurate and complete, correctly defining both procedural and object-oriented programming and providing appropriate examples.  Therefore, the student's answer is excellent and demonstrates a good understanding of the concepts.\n",
+                            "marks": "8\n"
+                        },
+                        {
+                            "question": "What is the difference between a compiler and an interpreter? How do they process code differently?",
+                            "answer": "\"Question\": \"What is the difference between a compiler and an interpreter? How do they process code differently?\"\n\n\"Answer\": A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly.\n\nCompiler: C, C++, Java (to bytecode)\nInterpreter: Python, Javascript",
+                            "answer_key": "A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly. Compiler: C, C++, Java (to bytecode). Interpreter: Python, JavaScript.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is accurate and complete.  It correctly identifies the fundamental difference between compilers and interpreters\u2014that compilers translate the entire program at once, while interpreters translate and execute line by line.  The examples provided (C, C++, Java, Python, JavaScript) are also appropriate and illustrate the point effectively.  There's no need for improvement.\n",
+                            "marks": "5\n"
+                        },
+                        {
+                            "question": "Describe the concept of inheritance in object-oriented programming. How does it facilitate code reusability?",
+                            "answer": "\"Question\": \"Describe the concept of inheritance in Object-Oriented programming. How does it facilitate code reusability?\"\n\n\"Answer\": \"Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behavior from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start-engine(). Class car can inherit from Vehicle and gain access to its attributes and methods.\"",
+                            "answer_key": "Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behaviors from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is largely correct and demonstrates understanding of the core concept of inheritance.  It accurately describes inheritance as a mechanism for creating new classes (subclasses) from existing ones (superclasses), and correctly points out that this allows for the reuse of attributes and methods.  The example of a `Vehicle` class and a `Car` class inheriting from it is also appropriate and illustrates the concept well.\n\nHowever, the answer could be improved by including a more explicit statement on *how* the code reusability is facilitated.  While the answer implies it, explicitly stating that the subclass doesn't need to redefine the inherited attributes and methods would strengthen it.  A minor point is the inconsistent capitalization of \"car\" in the example.  While not incorrect, maintaining consistency would improve the professionalism of the response.\n",
+                            "marks": "4\n"
+                        }
+                    ]
+                },
+                {
+                    "Subject_name": "Introduction to Programming",
+                    "Subject_code": "CSE1001",
+                    "Number_of_questions": 3,
+                    "questions": [
+                        {
+                            "question": "Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.",
+                            "answer": "\"Question\": Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.\n\n\"Answer\": Procedural Programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequences of steps to be executed. Object-Oriented Programming is a programming paradigm based on the concepts of \"objects,\" which can contain data in the form of attributes and codes in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of Object-Oriented programming: Java, Python.",
+                            "answer_key": "Procedural programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequence of steps to be executed. Object-oriented programming (OOP) is a programming paradigm based on the concept of \\\"objects\\\", which can contain data in the form of attributes and code in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of object-oriented programming: Java, Python.",
+                            "total_marks": 10,
+                            "evaluation": "The student's answer is almost identical to the answer key.  The only difference is minor formatting (use of quotation marks around \"Question\" and \"Answer\").  The content is exactly the same, accurately defining procedural and object-oriented programming and providing valid examples of each.  Therefore, the student's answer is excellent and demonstrates a strong understanding of the concepts.\n",
+                            "marks": "10\n"
+                        },
+                        {
+                            "question": "What is the difference between a compiler and an interpreter? How do they process code differently?",
+                            "answer": "\"Question\": \"What is the difference between a compiler and an interpreter? How do they process code differently?\"\n\n\"Answer\": A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly.\n\nCompiler: C, C++, Java (to bytecode)\nInterpreter: Python, Javascript",
+                            "answer_key": "A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly. Compiler: C, C++, Java (to bytecode). Interpreter: Python, JavaScript.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is accurate and complete.  It correctly identifies the core difference between compilers and interpreters\u2014that compilers translate the entire program at once while interpreters translate and execute line by line.  The examples provided for each (C, C++, Java for compilers; Python, JavaScript for interpreters) are also correct, although it's important to note that Java's compilation to bytecode is a crucial distinction.  The answer mirrors the answer key almost exactly, demonstrating a thorough understanding of the concepts.  There's no need for improvement.\n",
+                            "marks": "5\n"
+                        },
+                        {
+                            "question": "Describe the concept of inheritance in object-oriented programming. How does it facilitate code reusability?",
+                            "answer": "Here's a cleaned-up version of the handwritten text:\n\n\"Question\": \"Describe the concept of inheritance in Object-Oriented programming. How does it facilitate code reusability?\"\n\n\"Answer\": \"Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behavior from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.\"",
+                            "answer_key": "Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behaviors from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is very good and accurately reflects the core concept of inheritance in OOP.  It correctly defines inheritance, explains how subclasses inherit from superclasses, and provides a clear, concise example illustrating the reuse of code. The answer aligns perfectly with the answer key and demonstrates a strong understanding of the topic.  There is no significant room for improvement in terms of accuracy or clarity.\n",
+                            "marks": "5\n"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kumar",
+            "email": "sansan@gmail.com",
+            "age": 20,
+            "sex": "Male",
+            "password": "san8940",
+            "exams": [
+                {
+                    "Subject_name": "Introduction to Programming",
+                    "Subject_code": "CSE1001",
+                    "Number_of_questions": 3,
+                    "questions": [
+                        {
+                            "question": "Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.",
+                            "answer": "\"Question\": Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.\n\n\"Answer\": Procedural Programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequences of steps to be executed. Object-Oriented Programming is a programming paradigm based on the concepts of \"objects\", which can contain data in the form of attributes and codes in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of Object-Oriented programming: Java, Python.",
+                            "answer_key": "Procedural programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequence of steps to be executed. Object-oriented programming (OOP) is a programming paradigm based on the concept of \\\"objects\\\", which can contain data in the form of attributes and code in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of object-oriented programming: Java, Python.",
+                            "total_marks": 10,
+                            "evaluation": "The student's answer is almost identical to the answer key.  The only difference is minor formatting (use of quotation marks around \"Question\" and \"Answer\").  The content is entirely accurate and correctly describes the fundamental differences between procedural and object-oriented programming, giving appropriate examples.  The student demonstrates a good understanding of the concepts.  There is nothing to improve in the answer; it's a well-written and correct response.\n",
+                            "marks": "8\n"
+                        },
+                        {
+                            "question": "What is the difference between a compiler and an interpreter? How do they process code differently?",
+                            "answer": "**Question:** \"What is the difference between a compiler and an interpreter? How do they process code differently?\"\n\n**Answer:** A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately.  An interpreter translates the source code line by line into machine code or intermediate code and executes it directly.\n\nCompiler: C, C++, Java (to bytecode)\nInterpreter: Python, Javascript",
+                            "answer_key": "A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly. Compiler: C, C++, Java (to bytecode). Interpreter: Python, JavaScript.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is accurate and complete.  It correctly identifies the key difference between compilers and interpreters\u2014that compilers translate the entire program at once, while interpreters translate and execute line by line.  The examples given for each are also correct.  There's nothing to improve upon in this response.\n",
+                            "marks": "5\n"
+                        },
+                        {
+                            "question": "Describe the concept of inheritance in object-oriented programming. How does it facilitate code reusability?",
+                            "answer": "Hello welcome home. How are you? I hope you have a wonderful day. Thank you for coming. Bye.",
+                            "answer_key": "Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behaviors from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is completely irrelevant to the question about inheritance in object-oriented programming.  It provides a friendly greeting and farewell, but offers no explanation of inheritance, its mechanics, or how it promotes code reusability.  The answer demonstrates a complete lack of understanding of the concept.\n",
+                            "marks": "0\n"
+                        }
+                    ]
+                },
+                {
+                    "Subject_name": "Introduction to Programming",
+                    "Subject_code": "CSE1001",
+                    "Number_of_questions": 3,
+                    "questions": [
+                        {
+                            "question": "Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.",
+                            "answer": "\"Question\": Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.\n\n\"Answer\": Procedural Programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequences of steps to be executed. Object-Oriented Programming is a programming paradigm based on the concepts of 'objects', which can contain data in the form of attributes and codes in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of Object-Oriented programming: Java, Python.",
+                            "answer_key": "Procedural programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequence of steps to be executed. Object-oriented programming (OOP) is a programming paradigm based on the concept of \\\"objects\\\", which can contain data in the form of attributes and code in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of object-oriented programming: Java, Python.",
+                            "total_marks": 10,
+                            "evaluation": "The student's answer is almost identical to the answer key.  The only difference is minor formatting (the use of quotation marks around \"Question\" and \"Answer\").  The content is entirely accurate and addresses all parts of the question: defining both procedural and OOP programming, highlighting key differences, and providing appropriate examples.  Therefore, the student's answer is excellent and demonstrates a good understanding of the concepts.\n",
+                            "marks": "9\n"
+                        },
+                        {
+                            "question": "What is the difference between a compiler and an interpreter? How do they process code differently?",
+                            "answer": "Here's a cleaned-up version of the handwritten text:\n\n**Question:** \"What is the difference between a compiler and an interpreter? How do they process code differently?\"\n\n**Answer:** A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately.  An interpreter translates the source code line by line into machine code or intermediate code and executes it directly.\n\nCompiler: C, C++, Java (to bytecode)\nInterpreter: Python, Javascript",
+                            "answer_key": "A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly. Compiler: C, C++, Java (to bytecode). Interpreter: Python, JavaScript.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is accurate and complete.  It correctly identifies the fundamental difference between compilers and interpreters:  compilers translate the entire program at once, while interpreters translate and execute line by line.  The examples provided (C, C++, Java, Python, JavaScript) are also appropriate and illustrate the point effectively.  There is no need for improvement.\n",
+                            "marks": "5\n"
+                        },
+                        {
+                            "question": "Describe the concept of inheritance in object-oriented programming. How does it facilitate code reusability?",
+                            "answer": null,
+                            "answer_key": "Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behaviors from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.",
+                            "total_marks": 5,
+                            "evaluation": "The student provided no answer, therefore there is nothing to evaluate.  The student's response demonstrates a complete lack of understanding of the concept of inheritance in object-oriented programming.\n",
+                            "marks": "0\n"
+                        }
+                    ]
+                },
+                {
+                    "Subject_name": "Introduction to Programming",
+                    "Subject_code": "CSE1001",
+                    "Number_of_questions": 3,
+                    "questions": [
+                        {
+                            "question": "Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.",
+                            "answer": "\"Question\": Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.\n\n\"Answer\": Procedural Programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequences of steps to be executed. Object-Oriented Programming is a programming paradigm based on the concepts of \"objects,\" which can contain data in the form of attributes and codes in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of Object-Oriented programming: Java, Python.",
+                            "answer_key": "Procedural programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequence of steps to be executed. Object-oriented programming (OOP) is a programming paradigm based on the concept of \\\"objects\\\", which can contain data in the form of attributes and code in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of object-oriented programming: Java, Python.",
+                            "total_marks": 10,
+                            "evaluation": "The student's answer is almost identical to the answer key.  The only difference is minor stylistic variations in wording (e.g., \"sequences of steps\" vs. \"sequence of steps\").  The content is completely accurate and addresses all parts of the question: defining both paradigms, highlighting key differences, and providing valid examples.  Therefore, the student's answer is excellent and demonstrates a strong understanding of the concepts.\n",
+                            "marks": "10\n"
+                        },
+                        {
+                            "question": "What is the difference between a compiler and an interpreter? How do they process code differently?",
+                            "answer": "\"Question\": \"what is the difference between a compiler and an interpreter? How do they process code differently?\"\n\n\"Answer\": A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly.\n\nCompiler: C, C++, Java (to bytecode)\nInterpreter: Python, Javascript",
+                            "answer_key": "A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly. Compiler: C, C++, Java (to bytecode). Interpreter: Python, JavaScript.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is accurate and complete.  It correctly defines the difference between a compiler and an interpreter in terms of their code translation and execution processes. The examples provided for each type of language are also correct.  There is no need for improvement.\n",
+                            "marks": "5\n"
+                        },
+                        {
+                            "question": "Describe the concept of inheritance in object-oriented programming. How does it facilitate code reusability?",
+                            "answer": "Here's a transcription of the handwritten note:\n\n\"Hello welcome home. How are you? I hope you have a wonderful day. Thank you for coming. Bye\"",
+                            "answer_key": "Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behaviors from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.",
+                            "total_marks": 5,
+                            "evaluation": "The student's answer is completely irrelevant to the question about inheritance in object-oriented programming.  It appears to be a completely unrelated social greeting. The student has not demonstrated any understanding of the concept.  They have failed to address the question in any way.\n",
+                            "marks": "0\n"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

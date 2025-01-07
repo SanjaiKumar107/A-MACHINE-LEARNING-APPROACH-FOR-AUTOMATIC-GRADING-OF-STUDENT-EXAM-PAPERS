@@ -1,0 +1,26 @@
+{
+    "subjects": [
+        {
+            "Subject_name": "Introduction to Programming",
+            "Subject_code": "CSE1001",
+            "Number_of_questions": 3,
+            "questions": [
+                {
+                    "question": "Explain the difference between procedural programming and object-oriented programming (OOP). Provide examples of each.",
+                    "answer": "Procedural programming is a programming paradigm where the program is structured around procedures or functions that perform operations on data. It focuses on procedures and the sequence of steps to be executed. Object-oriented programming (OOP) is a programming paradigm based on the concept of \\\"objects\\\", which can contain data in the form of attributes and code in the form of methods. OOP emphasizes data encapsulation, inheritance, and polymorphism. Example of procedural programming: C programming language. Example of object-oriented programming: Java, Python.",
+                    "marks": 10
+                },
+                {
+                    "question": "What is the difference between a compiler and an interpreter? How do they process code differently?",
+                    "answer": "A compiler translates the entire source code into machine code or intermediate code in a single batch, and then the resulting code can be executed separately. An interpreter translates the source code line by line into machine code or intermediate code and executes it directly. Compiler: C, C++, Java (to bytecode). Interpreter: Python, JavaScript.",
+                    "marks": 5
+                },
+                {
+                    "question": "Describe the concept of inheritance in object-oriented programming. How does it facilitate code reusability?",
+                    "answer": "Inheritance is a mechanism in OOP where a new class (subclass) is created by inheriting properties and behaviors from an existing class (superclass). Subclass inherits attributes and methods from its superclass, allowing code reuse without rewriting the same code. Example: Class Vehicle might have attributes like color and methods like start_engine(). Class Car can inherit from Vehicle and gain access to its attributes and methods.",
+                    "marks": 5
+                }
+            ]
+        }
+    ]
+}

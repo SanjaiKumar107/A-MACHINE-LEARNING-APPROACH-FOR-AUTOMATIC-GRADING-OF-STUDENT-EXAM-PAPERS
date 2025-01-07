@@ -1,0 +1,285 @@
+[
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "session_state",
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "isExtraImport": true,
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "session_state",
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "isExtraImport": true,
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "google.generativeai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "google.generativeai",
+        "description": "google.generativeai",
+        "detail": "google.generativeai",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def main():\n    st.title(\"Automatic Handwritten Answer Script Evaluation System\")\n    st.write(\"Welcome to the Automatic Handwritten Answer Script Evaluation System. Please login or signup to continue.\")\n    page = st.radio(\n        \"Login or Signup as:\",\n        (\"Evaluator\", \"Student\"),        key=\"login_signup\",\n    )\n    if st.button(\"Login\"):\n        if page == \"Evaluator\":\n            os.system('streamlit run evaluator.py')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "evaluator",
+        "description": "evaluator",
+        "peekOfCode": "def signup(json_file_path=\"evaluator.json\"):\n    st.title(\"Evaluator Signup Page\")\n    with st.form(\"signup_form\"):\n        st.write(\"Fill in the details below to create an account:\")\n        name = st.text_input(\"Name:\")\n        email = st.text_input(\"Email:\")\n        age = st.number_input(\"Age:\", min_value=0, max_value=120)\n        sex = st.radio(\"Sex:\", (\"Male\", \"Female\", \"Other\"))\n        password = st.text_input(\"Password:\", type=\"password\")\n        confirm_password = st.text_input(\"Confirm Password:\", type=\"password\")",
+        "detail": "evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "check_login",
+        "kind": 2,
+        "importPath": "evaluator",
+        "description": "evaluator",
+        "peekOfCode": "def check_login(username, password, json_file_path=\"evaluator.json\"):\n    try:\n        with open(json_file_path, \"r\") as json_file:\n            data = json.load(json_file)\n        for user in data[\"users\"]:\n            if user[\"email\"] == username and user[\"password\"] == password:\n                session_state[\"logged_in\"] = True\n                session_state[\"user_info\"] = user\n                st.success(\"Login successful!\")\n                return user",
+        "detail": "evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "initialize_database",
+        "kind": 2,
+        "importPath": "evaluator",
+        "description": "evaluator",
+        "peekOfCode": "def initialize_database(\n    json_file_path=\"evaluator.json\", question_paper=\"question_paper.json\", student = \"students.json\"\n):\n    try:\n        if not os.path.exists(json_file_path):\n            data = {\"users\": []}\n            with open(json_file_path, \"w\") as json_file:\n                json.dump(data, json_file)\n        if not os.path.exists(question_paper):\n            data = {\"subjects\": []}",
+        "detail": "evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "create_account",
+        "kind": 2,
+        "importPath": "evaluator",
+        "description": "evaluator",
+        "peekOfCode": "def create_account(name, email, age, sex, password, json_file_path=\"evaluator.json\"):\n    try:\n        if not os.path.exists(json_file_path) or os.stat(json_file_path).st_size == 0:\n            data = {\"users\": []}\n        else:\n            with open(json_file_path, \"r\") as json_file:\n                data = json.load(json_file)\n        # Append new user data to the JSON structure\n        user_info = {\n            \"name\": name,",
+        "detail": "evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "evaluator",
+        "description": "evaluator",
+        "peekOfCode": "def login(json_file_path=\"evaluator.json\", question_paper=\"question_paper.json\"):\n    st.title(\"Login Page\")\n    username = st.text_input(\"Username:\")\n    password = st.text_input(\"Password:\", type=\"password\")\n    login_button = st.button(\"Login\")\n    if login_button:\n        user = check_login(username, password, json_file_path)\n        if user is not None:\n            session_state[\"logged_in\"] = True\n            session_state[\"user_info\"] = user",
+        "detail": "evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_info",
+        "kind": 2,
+        "importPath": "evaluator",
+        "description": "evaluator",
+        "peekOfCode": "def get_user_info(email, json_file_path=\"evaluator.json\"):\n    try:\n        with open(json_file_path, \"r\") as json_file:\n            data = json.load(json_file)\n            for user in data[\"users\"]:\n                if user[\"email\"] == email:\n                    return user\n        return None\n    except Exception as e:\n        st.error(f\"Error getting user information: {e}\")",
+        "detail": "evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "render_dashboard",
+        "kind": 2,
+        "importPath": "evaluator",
+        "description": "evaluator",
+        "peekOfCode": "def render_dashboard(user_info, json_file_path=\"evaluator.json\"):\n    try:\n        st.title(f\"Welcome to the Dashboard, {user_info['name']}!\")\n        st.subheader(\"Evaluator Information\")\n        st.write(f\"Name: {user_info['name']}\")\n        st.write(f\"Sex: {user_info['sex']}\")\n        st.write(f\"Age: {user_info['age']}\")\n    except Exception as e:\n        st.error(f\"Error rendering dashboard: {e}\")\ndef main(json_file_path=\"evaluator.json\", question_paper=\"question_paper.json\"):",
+        "detail": "evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "evaluator",
+        "description": "evaluator",
+        "peekOfCode": "def main(json_file_path=\"evaluator.json\", question_paper=\"question_paper.json\"):\n    st.title(\"Evaluator Dashboard\")\n    page = st.sidebar.radio(\n        \"Go to\",\n        (\n            \"Signup/Login\",\n            \"Dashboard\",\n            \"Set Question Paper\",\n            \"View Question Papers\",\n            \"View Student Responses\",",
+        "detail": "evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "session_state",
+        "kind": 5,
+        "importPath": "evaluator",
+        "description": "evaluator",
+        "peekOfCode": "session_state = st.session_state\nif \"user_index\" not in st.session_state:\n    st.session_state[\"user_index\"] = 0\ndef signup(json_file_path=\"evaluator.json\"):\n    st.title(\"Evaluator Signup Page\")\n    with st.form(\"signup_form\"):\n        st.write(\"Fill in the details below to create an account:\")\n        name = st.text_input(\"Name:\")\n        email = st.text_input(\"Email:\")\n        age = st.number_input(\"Age:\", min_value=0, max_value=120)",
+        "detail": "evaluator",
+        "documentation": {}
+    },
+    {
+        "label": "get_text_from_image",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def get_text_from_image(image):\n    try:\n        genai.configure(api_key=os.getenv(\"GOOGLE_API_KEY_1\"))\n        image = Image.open(image)\n        model = genai.GenerativeModel(\"gemini-1.5-flash\")\n        response = model.generate_content([\"Please analyze the handwritten text in the provided image and provide the corresponding text.\", image], safety_settings=safety_settings)\n        return response.text\n    except Exception as e:\n        st.error(f\"Error getting text from image: {e}\")\n        return None",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def evaluate(question, answer_key, student_answer):\n    try:\n        genai.configure(api_key=os.getenv(\"GOOGLE_API_KEY_2\"))\n        model = genai.GenerativeModel(\"gemini-1.5-flash\")\n        prompt = f\"\"\"Question: {question}\\n\\nAnswer Key: {answer_key}\\n\\nStudent Answer: {student_answer}\\n\\nPlease read the question and the answer key provided below to understand the context. Then, evaluate the student's answer based on the answer key. Give feedback on the student's answer. Do not give suggested answers. Do not write heading at start of the response.      \n        \"\"\"\n        response = model.generate_content(prompt,safety_settings=safety_settings)\n        return response.text\n    except Exception as e:\n        st.error(f\"Error getting marks: {e}\")",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "get_marks",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def get_marks(question, answer_key, student_answer, total_marks):\n    try:\n        genai.configure(api_key=os.getenv(\"GOOGLE_API_KEY_3\"))\n        model = genai.GenerativeModel(\"gemini-1.5-flash\")\n        prompt = f\"\"\"Question: {question}\\n\\nAnswer Key: {answer_key}\\n\\nStudent Answer: {student_answer}\\n\\nTotal Marks: {total_marks}\\n\\nPlease read the question and the answer key provided below to understand the context. Then, evaluate the student's answer based on the answer key and allocate marks accordingly from the total marks given. Give the marks obtained by the student for the question as an integer value and do not write any additional text.\n        For example, if the student obtained 5 marks out of 10, you should enter 5 as the response.     \n        \"\"\"\n        response = model.generate_content(prompt,safety_settings=safety_settings)\n        return response.text\n    except Exception as e:",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def signup(json_file_path=\"students.json\"):\n    st.title(\"Student Signup Page\")\n    with st.form(\"signup_form\"):\n        st.write(\"Fill in the details below to create an account:\")\n        name = st.text_input(\"Name:\")\n        email = st.text_input(\"Email:\")\n        age = st.number_input(\"Age:\", min_value=0, max_value=120)\n        sex = st.radio(\"Sex:\", (\"Male\", \"Female\", \"Other\"))\n        password = st.text_input(\"Password:\", type=\"password\")\n        confirm_password = st.text_input(\"Confirm Password:\", type=\"password\")",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "check_login",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def check_login(username, password, json_file_path=\"evaluator.json\"):\n    try:\n        with open(json_file_path, \"r\") as json_file:\n            data = json.load(json_file)\n        for user in data[\"students\"]:\n            if user[\"email\"] == username and user[\"password\"] == password:\n                session_state[\"logged_in\"] = True\n                session_state[\"user_info\"] = user\n                st.success(\"Login successful!\")\n                return user",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "initialize_database",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def initialize_database(\n    json_file_path=\"students.json\", question_paper=\"question_paper.json\"\n):\n    try:\n        if not os.path.exists(json_file_path):\n            data = {\"students\": []}\n            with open(json_file_path, \"w\") as json_file:\n                json.dump(data, json_file)\n        if not os.path.exists(question_paper):\n            data = {\"subjects\": []}",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "create_account",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def create_account(name, email, age, sex, password, json_file_path=\"students.json\"):\n    try:\n        if not os.path.exists(json_file_path) or os.stat(json_file_path).st_size == 0:\n            data = {\"students\": []}\n        else:\n            with open(json_file_path, \"r\") as json_file:\n                data = json.load(json_file)\n        # Append new user data to the JSON structure\n        user_info = {\n            \"name\": name,",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "login",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def login(json_file_path=\"evaluator.json\", question_paper=\"question_paper.json\"):\n    st.title(\"Login Page\")\n    username = st.text_input(\"Username:\")\n    password = st.text_input(\"Password:\", type=\"password\")\n    login_button = st.button(\"Login\")\n    if login_button:\n        user = check_login(username, password, json_file_path)\n        if user is not None:\n            session_state[\"logged_in\"] = True\n            session_state[\"user_info\"] = user",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_info",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def get_user_info(email, json_file_path=\"evaluator.json\"):\n    try:\n        with open(json_file_path, \"r\") as json_file:\n            data = json.load(json_file)\n            for user in data[\"students\"]:\n                if user[\"email\"] == email:\n                    return user\n        return None\n    except Exception as e:\n        st.error(f\"Error getting user information: {e}\")",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "render_dashboard",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def render_dashboard(user_info, json_file_path=\"evaluator.json\"):\n    try:\n        st.title(f\"Welcome to the Dashboard, {user_info['name']}!\")\n        st.subheader(\"Student Information\")\n        st.write(f\"Name: {user_info['name']}\")\n        st.write(f\"Sex: {user_info['sex']}\")\n        st.write(f\"Age: {user_info['age']}\")\n    except Exception as e:\n        st.error(f\"Error rendering dashboard: {e}\")\ndef main(json_file_path=\"students.json\", question_paper=\"question_paper.json\"):",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "def main(json_file_path=\"students.json\", question_paper=\"question_paper.json\"):\n    st.title(\"Evaluator Dashboard\")\n    page = st.sidebar.radio(\n        \"Go to\",\n        (\n            \"Signup/Login\",\n            \"Dashboard\",\n            \"Attempt Exam\",\n        ),\n        key=\"page\",",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "safety_settings",
+        "kind": 5,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "safety_settings = [\n    {\n        \"category\": \"HARM_CATEGORY_DANGEROUS\",\n        \"threshold\": \"BLOCK_NONE\",\n    },\n    {\n        \"category\": \"HARM_CATEGORY_HARASSMENT\",\n        \"threshold\": \"BLOCK_NONE\",\n    },\n    {",
+        "detail": "student",
+        "documentation": {}
+    },
+    {
+        "label": "session_state",
+        "kind": 5,
+        "importPath": "student",
+        "description": "student",
+        "peekOfCode": "session_state = st.session_state\nif \"user_index\" not in st.session_state:\n    st.session_state[\"user_index\"] = 0\ndef get_text_from_image(image):\n    try:\n        genai.configure(api_key=os.getenv(\"GOOGLE_API_KEY_1\"))\n        image = Image.open(image)\n        model = genai.GenerativeModel(\"gemini-1.5-flash\")\n        response = model.generate_content([\"Please analyze the handwritten text in the provided image and provide the corresponding text.\", image], safety_settings=safety_settings)\n        return response.text",
+        "detail": "student",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "name": "sanjai",
+            "email": "sannnn1234san@gmail.com",
+            "age": 28,
+            "sex": "Male",
+            "password": "san8940"
+        },
+        {
+            "name": "Kumar",
+            "email": "sansan@gmail.com",
+            "age": 18,
+            "sex": "Male",
+            "password": "san8940"
+        }
+    ]
+}
